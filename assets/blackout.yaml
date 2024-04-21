@@ -22,24 +22,6 @@ light:
     intensity: 100
 
 entity:
-  - type: sphere
-    radius: 1
-    position: [-3.0, -1.0, -5.0]
-    material:
-      albedo: 1.0
-      color: 0xFFFFFF
-  - type: sphere
-    radius: 1
-    position: [0.0, -1.0, -5.0]
-    material:
-      albedo: 1.0
-      color: 0xFFFFFF
-  - type: sphere
-    radius: 1
-    position: [3.0, -1.0, -5.0]
-    material:
-      albedo: 1.0
-      color: 0xFFFFFF
   - type: plane
     material:
       albedo: 1.0
