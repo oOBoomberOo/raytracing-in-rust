@@ -30,10 +30,9 @@ pub fn parse_config(config: &str) -> anyhow::Result<(World, Camera)> {
     let camera = result.camera.build();
 
     println!(
-        "loaded world with {} lights, {} entities, and camera {:?}",
+        "loaded world with {} lights, {} entities",
         world.lights.len(),
         world.entities.len(),
-        camera
     );
 
     Ok((world, camera))
