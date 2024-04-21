@@ -1,0 +1,50 @@
+reflection_depth: 10
+sky:
+  from: 0x000000
+  to: 0x000000
+
+camera:
+  width: 400
+  height: 400
+
+light:
+  - type: point
+    position: [-3.0, 0.0, -0.0]
+    color: 0xFF0000
+    intensity: 100
+  - type: point
+    position: [0.0, 0.0, -0.0]
+    color: 0x00FF00
+    intensity: 100
+  - type: point
+    position: [3.0, 0.0, -0.0]
+    color: 0x0000FF
+    intensity: 100
+
+entity:
+  - type: sphere
+    radius: 1
+    position: [-3.0, -1.0, -5.0]
+    material:
+      albedo: 1.0
+      color: 0xFFFFFF
+  - type: sphere
+    radius: 1
+    position: [0.0, -1.0, -5.0]
+    material:
+      albedo: 1.0
+      color: 0xFFFFFF
+  - type: sphere
+    radius: 1
+    position: [3.0, -1.0, -5.0]
+    material:
+      albedo: 1.0
+      color: 0xFFFFFF
+  - type: plane
+    material:
+      albedo: 1.0
+      surface:
+        reflectivity: 0.1
+      color: 0xFFFFFF
+    position: [0.0, 1.0, 0.0]
+    normal: [0.0, 1.0, 0.0]

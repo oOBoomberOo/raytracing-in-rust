@@ -1,0 +1,60 @@
+reflection_depth: 10
+sky:
+  from: 0x87CEEB
+  to: 0x48bae8
+
+camera:
+  width: 400
+  height: 400
+
+light:
+  - type: directional
+    direction: [0.0, 1.0, 0.0]
+    color: 0xFFFFFF
+    intensity: 1.0
+  - type: point
+    position: [2.0, 0.0, -2.0]
+    color: 0xFF0000
+    intensity: 100
+  - type: point
+    position: [-2.0, 0.0, -2.0]
+    color: 0x0000FF
+    intensity: 100
+
+entity:
+  - type: sphere
+    radius: 0.5
+    position: [0.0, 0.0, -5.0]
+    material:
+      albedo: 1.0
+      surface:
+        reflectivity: 0.5
+      color: 0xFF0000
+  - type: sphere
+    radius: 1.0
+    position: [-1.0, -1.0, -4.0]
+    material:
+      albedo: 0.2
+      surface:
+        reflectivity: 0.1
+      color:
+        scale: 0.1
+        path: "assets/tile.png"
+  - type: sphere
+    radius: 0.5
+    position: [1.0, -1.0, -4.0]
+    material:
+      albedo: 0.5
+      surface:
+        reflectivity: 0.1
+      color: 0x00FF00
+  - type: plane
+    material:
+      albedo: 1.0
+      surface:
+        reflectivity: 0.1
+      color:
+        scale: 1
+        path: "assets/tile.png"
+    position: [0.0, 1.0, 0.0]
+    normal: [0.0, 1.0, 0.0]
